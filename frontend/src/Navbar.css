@@ -1,0 +1,85 @@
+/* src/Navbar.css */
+
+.navbar {
+  /* 1. ให้แถบ Navbar เป็นสีขาวและเต็มความกว้าง */
+  width: 100%; 
+  background-color: #ffffff;
+  border-bottom: 1px solid #dee2e6;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  padding: 0.75rem 0; /* ปรับ Padding บน-ล่าง */
+}
+
+/* 2. สร้าง container ภายใน Navbar เพื่อจัดกึ่งกลางเนื้อหา */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  /* จำกัดความกว้างของเนื้อหา (โลโก้ + ลิงก์) */
+  max-width: 1140px; 
+  margin: 0 auto; /* จัดกึ่งกลาง container */
+  padding: 0 1rem; /* เพิ่ม padding ซ้าย-ขวา ภายใน container */
+}
+
+.navbar-brand a {
+  font-size: 1.75rem; /* ขยายขนาดโลโก้ */
+  font-weight: 700; /* หนาขึ้น */
+  color: #007bff; /* (ตัวอย่าง) ใส่สีน้ำเงินให้แบรนด์ */
+  text-decoration: none;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin-left: 24px; /* เพิ่มระยะห่างระหว่างปุ่ม */
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #555;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.navbar-links a:hover {
+  background-color: #f0f0f0;
+  color: #0056b3;
+}
+/* ... (โค้ด Navbar.css เดิมของคุณ) ... */
+
+/* สไตล์สำหรับปุ่มที่เป็น Link (เช่น Login) */
+.navbar-button {
+  background-color: #398fff;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.navbar-button:hover {
+  background-color: #1c7eff;
+  color: white; /* ต้องมี ไม่งั้นสีเพี้ยน */
+}
+
+/* สไตล์สำหรับปุ่ม Logout (ที่เป็น <button>) */
+.logout-button {
+  background-color: #dc3545; /* สีแดง */
+  border: none;
+  font-family: inherit;
+  font-size: 1rem; /* ทำให้ขนาดฟอนต์เท่ากับ Link อื่นๆ */
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #c82333;
+}
